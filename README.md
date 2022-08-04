@@ -3,7 +3,7 @@
 
 # Project Title
 
-One Paragraph of project description goes here
+This project is intended to be a place for wimcomers to complete excercises and practice our git workflow. Contributers will work on the project as needed and build upon eachother's work.
 
 ### Prerequisites
 
@@ -19,18 +19,24 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+#### Project setup:
 ```
-Give the example
+npm install
 ```
 
-And repeat
-
+#### Compiles and hot-reloads for development:
 ```
-until finished
+npm run serve
+```
+
+#### Compiles and minifies for production:
+```
+npm run build
+```
+
+#### Lints and fixes files:
+```
+npm run lint
 ```
 
 ## Building and testing
