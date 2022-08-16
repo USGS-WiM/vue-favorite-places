@@ -4,7 +4,7 @@
 
   <!-- USGS Header -->
   <div id="usgsHeader">
-    <img src="/path/to/usgs-logo.png" title="USGS Logo" alt="USGS Logo"/>
+    <img src="../src/assets/images/USGS_logo.png" title="USGS Logo" alt="USGS Logo"/>
   </div>
 
   <!-- Header -->
