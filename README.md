@@ -3,7 +3,7 @@
 
 # Project Title
 
-One Paragraph of project description goes here
+This project is intended to be a place for wimcomers to complete excercises and practice our git workflow. Contributers will work on the project as needed and build upon eachother's work.
 
 ### Prerequisites
 
