@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
--
+- added Leaflet map to page
 
 ### Changed
 
--
+- Removed testing instructions from the README
 
 ### Fixed
 

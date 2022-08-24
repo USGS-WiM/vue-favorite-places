@@ -28,7 +28,9 @@
   
     <!-- Main Content Area -->
     <main id="content">
-      <div id="map">map.</div>
+      <div id="map">
+        <Map> </Map>
+      </div>
       
       
     </main>
@@ -40,12 +42,17 @@
 </template>
 
 <script>
-/* import HelloWorld from './components/HelloWorld.vue' */
+/*import HelloWorld from './components/HelloWorld.vue'*/
+import 'leaflet/dist/leaflet.css';
+import Map from './components/Map.vue'
+
+
 
 export default {
   name: "App",
   components: {
-    /* HelloWorld */
+     /*HelloWorld*/ 
+     Map
   },
 };
 </script>
