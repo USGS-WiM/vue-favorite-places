@@ -1,66 +1,59 @@
 <template>
   <!-- Layout HTML -->
-<body>
-
-  <!-- USGS Header -->
-  <div id="usgsHeader">
-    <img src="../src/assets/images/USGS_logo.png" title="USGS Logo" alt="USGS Logo"/>
-  </div>
-
-  <!-- Header -->
-  <header id="top">
-    <h1 class="app-title">App Title</h1>
-
-    <!-- Nav -->
-    <nav id="topNav">
-      <a href="#">Home</a>
-      <a href="#"><i class="fas fa-info-circle"></i> About</a>
-      <a href="#"><i class="fas fa-arrow-right-from-bracket"></i></a>
-    </nav>
-  </header>
-  
-  <div id="appBody">
-  
-    <!-- Sidebar -->
-    <div id="sidebar">
-      sidebar.
+  <body>
+    <!-- USGS Header -->
+    <div id="usgsHeader">
+      <img
+        src="../src/assets/images/USGS_logo.png"
+        title="USGS Logo"
+        alt="USGS Logo"
+      />
     </div>
-  
-    <!-- Main Content Area -->
-    <main id="content">
-      <div id="map">
-        <Map> </Map>
-      </div>
-      
-      
-    </main>
-  </div>
 
+    <!-- Header -->
+    <header id="top">
+      <h1 class="app-title">App Title</h1>
 
-</body>
+      <!-- Nav -->
+      <nav id="topNav" class="test">
+        <a href="#">Home</a>
+        <a href="#"><i class="fas fa-info-circle"></i> About</a>
+        <a href="#"><i class="fas fa-arrow-right-from-bracket"></i></a>
+      </nav>
+    </header>
 
+    <div id="appBody">
+      <!-- Sidebar -->
+      <div id="sidebar">sidebar.</div>
+
+      <!-- Main Content Area -->
+      <main id="content">
+        <div id="map">
+          <Map> </Map>
+        </div>
+      </main>
+    </div>
+  </body>
 </template>
 
 <script>
 /*import HelloWorld from './components/HelloWorld.vue'*/
-import 'leaflet/dist/leaflet.css';
-import Map from './components/Map.vue'
-
-
+import "leaflet/dist/leaflet.css";
+import Map from "./components/Map.vue";
 
 export default {
   name: "App",
   components: {
-     /*HelloWorld*/ 
-     Map
+    /*HelloWorld*/
+    Map,
   },
 };
 </script>
 
 <style>
-
 /* Layout CSS */
-body, html{
+body,
+html {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -71,28 +64,32 @@ body, html{
   height: 100%;
   max-height: 100%;
   overflow: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body{
+body {
   display: flex;
   flex-direction: column;
 }
-
+.test2 div {
+  font-size: large;
+  color: purple;
+}
 /* Required USGS Header */
-#usgsHeader{
+#usgsHeader {
   display: block;
   width: 100%;
   padding: 8px 15px;
-  background-color: #00264C;
+  background-color: #00264c;
   height: fit-content;
 }
-#usgsHeader img{
+#usgsHeader img {
   height: 42px;
   width: auto;
 }
 
 /* Top bar */
-header#top{
+header#top {
   width: 100%;
   background-color: black;
   display: flex;
@@ -100,7 +97,7 @@ header#top{
   padding: 10px 0 10px 15px;
 }
 /* App title */
-header#top .app-title{
+header#top .app-title {
   color: white;
   margin: 0;
   padding: 0;
@@ -109,7 +106,7 @@ header#top .app-title{
 }
 
 /* Top Bar Navigation */
-header#top nav#topNav{
+header#top nav#topNav {
   flex-grow: 3;
   display: flex;
   justify-content: flex-end;
@@ -119,17 +116,17 @@ header#top nav#topNav{
   margin-right: 15px;
 }
 /* Nav Links */
-header#top nav#topNav a{
+header#top nav#topNav a {
   line-height: 20px;
   color: white;
   white-space: nowrap;
 }
-header#top nav#topNav a i{
+header#top nav#topNav a i {
   padding: 0 5px;
 }
 
 /* Main Body */
-div#appBody{
+div#appBody {
   flex-grow: 3;
   width: 100%;
   overflow: auto;
@@ -139,21 +136,20 @@ div#appBody{
 }
 
 /* Sidebar */
-#sidebar{
+#sidebar {
   background-color: yellow;
   width: 300px;
 }
 
-
 /* Main Content & Map */
-main#content{
+main#content {
   background-color: seagreen;
   flex-grow: 3;
   display: flex;
   flex-direction: column;
 }
 /* App Content */
-#mapPanel{
+#mapPanel {
   display: block;
   width: 100%;
   background-color: aqua;
@@ -161,11 +157,9 @@ main#content{
   max-height: 49%;
 }
 /* Map */
-#map{
+#map {
   width: 100%;
   height: 100%;
   background-color: orange;
 }
-
-					
 </style>
